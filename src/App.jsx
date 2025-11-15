@@ -42,9 +42,8 @@ function App() {
   const addToCart=(product)=>{
     setCart((prevItem)=>{
       const existingItems=prevItem.find((item)=> item.id === product.id);
-      if (existingItems) {
-        setState(prev=>(prev=== product.id ? null : product.id))
-        return [...prevItem]
+      if(existingItems){
+        return prevItem;
       }
       setCount(count+1)
       return[...prevItem, product]
