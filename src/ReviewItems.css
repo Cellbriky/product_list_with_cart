@@ -45,8 +45,7 @@ html{
   text-align: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
-  overflow: scroll;
-  height: 100%;
+  height: fit-content;
 }
 .review-header{
   display: flex;

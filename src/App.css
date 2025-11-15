@@ -329,14 +329,20 @@ h1{
     border: 1px solid var(--Red);
   }
 @media screen  and (min-width:768px) {
+  /*
   .container{
     padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .flex-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  background-color: red;
   }
   h1{
     font-size: 3.2rem;
@@ -417,12 +423,123 @@ h1{
     color: var(--Red);
     font-weight: 700;
   }
+    */
+.container{
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+h1{
+  color: var(--Rose-900);
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.card-container{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+  row-gap: 8px;
+  column-gap: 12px;
+  width: 100%;
+}
+.product-card{
+  display: block;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.product-image{
+  width: 100%;
+  border-radius: 8px;
+ 
+}
+.icon-add-to-cart{
+  margin: 0px;
+  margin-right: 4px;
+}
+.btn-addCart, .active-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: aqua;
+  top: -32px;
+}  
+.btn-addCart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background-color: var(--Rose-50);
+  color: var(--Rose-900);
+  font-weight: 500;
+  line-height: 0px;
+  height: 32px;
+  padding: 0px 14px;
+  border-radius: 64px;
+  cursor: pointer;
+  border: 1px solid var(--Rose-500);
+}
+/* Active Btn */
+.active-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background-color: var(--Rose-50);
+  color: var(--Rose-900);
+  font-weight: 500;
+  line-height: 0px;
+  height: 32px;
+  padding: 0px 14px;
+  border-radius: 64px;
+  cursor: pointer;
+  border: 1px solid var(--Rose-500);
+}
+.text-btn{
+  font-size: 1.4rem;
+}
+p{
+  padding: 0;
+  margin: 0px;
+}
+.product-category, .product-name, .product-price{
+  margin: 0px;
+  top: -18px;
+  padding-bottom: 4px;
+  position: relative;
+}
+.product-category{
+  font-size: 1.2rem;
+}
+.product-name, .product-price{
+  font-size: 1.4rem;
+}
+.product-price{
+  padding: 0;
+  margin: 0;
+}
     /* Flex Two section Two */
   .cartBox{
     box-sizing: border-box;
     min-width: 0;
     margin: 0;
-    width: 100%;
+    width: fit-content;
     margin-top: 32px;
     margin-bottom: 24px;
 
@@ -434,7 +551,7 @@ h1{
     font-size: 1.8rem;
   }
   .title-cartBox{
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--Red);
   }
@@ -442,11 +559,10 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 12px;
+
   }
   .empty-cart-discription{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--Rose-500);
     font-weight: 700;
   }
@@ -455,7 +571,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 64px;
+    gap: 0px;
     outline: none;
     border: none;
     background-color: var(--Red);
@@ -463,30 +579,28 @@ h1{
     cursor: pointer;
     border: 1px solid var(--Red);
     font-weight: 500;
-    font-size: 2.4rem;
-    padding: 12px 33px;
+    padding: 12px 14px;
     border-radius: 64px;
   }
   .Qantity-text{
+    display: block;
     color: var(--Rose-50);
-    font-size: 2.4rem;
+    font-size: 1.4rem;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   .divicon-decrement{
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     border: 1px solid var(--Rose-50);
-    padding: 12px;
     border-radius: 50%;
   }
   .divicon-increment{
     background-color: transparent;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--Rose-50);
-    padding:12px;
     border-radius: 50%;
   }
   .iconColor{
