@@ -551,7 +551,7 @@ p{
     font-size: 1.8rem;
   }
   .title-cartBox{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--Red);
   }
@@ -620,16 +620,16 @@ p{
   }
   /*Cart */
   .title-cartBox{
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
   .li-container{
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     justify-content: space-between;
     align-items: center;
   }
   .item-name{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--Rose-900);
     margin-bottom: 4px;
@@ -638,7 +638,7 @@ p{
   .item-quantityDiv{
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .item-Qrt{
     color: var(--Red);
@@ -646,7 +646,7 @@ p{
     margin-right: 12px;
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .item-price{
     display: flex;
@@ -654,7 +654,7 @@ p{
     margin-right: 8px;
     color: var(--Rose-300);
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .item-sale{
     display: flex;
