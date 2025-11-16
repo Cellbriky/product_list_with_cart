@@ -142,7 +142,7 @@ function App() {
                       <div className='item-name' key={item.id}>{item.name}</div> 
                       <div className='item-quantityDiv'>
                         <div className="item-Qrt">{item.qantity}x</div>
-                        <div className="item-price">@ ${item.price.toFixed(2)}</div>
+                        <div className="item_price_div"><div className='div_'>@ </div><div className='item-price'>${item.price.toFixed(2)}</div></div>
                         <div className='item-sale'> ${item.sale.toFixed(2)}</div>
                       </div>
                     </div>

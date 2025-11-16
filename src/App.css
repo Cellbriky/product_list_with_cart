@@ -220,8 +220,8 @@ h1{
   align-items: flex-start;
 }
 .item-name{
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 600;
   color: var(--Rose-900);
   margin-bottom: 4px;
   margin-top: 12px;
@@ -232,20 +232,35 @@ h1{
   font-size: 1.4rem;
   padding: 6px 0px;
 }
-.item-Qrt{
-  color: var(--Red);
-  font-weight: 500;
-  margin-right: 12px;
+.item_price_div{
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.div_{
   font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  text-align: center;
+  color: var(--Rose-300);
+  margin-right: 1px;
 }
 .item-price{
   display: flex;
   align-items: center;
   margin-right: 8px;
   color: var(--Rose-300);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.item-Qrt{
+  color: var(--Red);
   font-weight: 500;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
   font-size: 1.4rem;
 }
 .item-sale{
@@ -285,10 +300,11 @@ h1{
 }
   .text-total{
     color: var(--Rose-900);
+    font-size: 1.4rem;
   }
   .totel-item{
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     color: var(--Rose-900);
   }
   .div-carbon-neutral{
@@ -305,11 +321,13 @@ h1{
     align-items: center;
     color: var(--Rose-900);
     font-weight: 400;
+    font-size: 1.2rem;
   }
   .bold-text{
-    font-weight: 700;
+    font-weight: 600;
     white-space: 24px;
     padding: 0px 4px;
+    font-size: 1.2rem;
   }
   .confirm-order-btn{
     display: flex;
@@ -319,63 +337,70 @@ h1{
     border: none;
     background-color: var(--Red);
     color: var(--Rose-50);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.6rem;
-    line-height: 52px;
-    padding: 0px 12px;
+    line-height: 24px;
+    padding: 6px 12px;
     margin-top: 24px;
     border-radius: 24px;
     cursor: pointer;
     border: 1px solid var(--Red);
   }
-@media screen  and (min-width:768px) {
-  /*
+@media screen  and (min-width: 768px) {
   .container{
     padding: 24px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    width: 100%;
+    position: relative;
   }
   .flex-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
   h1{
-    font-size: 3.2rem;
-    margin-bottom: 12px;
+    color: var(--Rose-900);
+    font-weight: 700;
+    font-size: 2.4rem;
   }
   .card-container{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr ;
-    row-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    row-gap: 8px;
+    column-gap: 12px;
     width: 100%;
   }
   .product-card{
     display: block;
-    height: 100%;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     position: relative;
   }
   .product-image{
     width: 100%;
-    border-radius: 24px;
-    margin-bottom: 24px;
+    border-radius: 8px;
+  
   }
-    .btn-addCart, .active-btn{
+  .icon-add-to-cart{
+    margin: 0px;
+    margin-right: 4px;
+  }
+  .btn-addCart, .active-btn{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: -64px;
-  }
+    background-color: aqua;
+    top: -32px;
+  }  
   .btn-addCart{
     display: flex;
     align-items: center;
@@ -385,155 +410,53 @@ h1{
     background-color: var(--Rose-50);
     color: var(--Rose-900);
     font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 54px;
-    padding: 12px 33px;
+    line-height: 0px;
+    height: 32px;
+    padding: 0px 14px;
     border-radius: 64px;
     cursor: pointer;
     border: 1px solid var(--Rose-500);
   }
-  .btn-addCart:hover{
-    border-color: var(--Red);
+  /* Active Btn */
+  .active-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background-color: var(--Rose-50);
+    color: var(--Rose-900);
+    font-weight: 500;
+    line-height: 0px;
+    height: 32px;
+    padding: 0px 14px;
+    border-radius: 64px;
+    cursor: pointer;
+    border: 1px solid var(--Rose-500);
   }
   .text-btn{
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
-  .icon-add-to-cart{
-    height: 32px;
-    width: 32px;
-    margin-right: 16px;
+  p{
+    padding: 0;
+    margin: 0px;
+  }
+  .product-category, .product-name, .product-price{
+    margin: 0px;
+    top: -18px;
+    padding-bottom: 4px;
+    position: relative;
   }
   .product-category{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 1.8rem;
-    color: var(--Rose-500);
-    font-weight: 500;
-    margin-bottom: 6px;
+    font-size: 1.2rem;
   }
-  .product-name{
-    font-size: 2.4rem;
-    color: var(--Rose-900);
-    font-weight: 700;
-    margin-bottom: 6px;
+  .product-name, .product-price{
+    font-size: 1.4rem;
   }
   .product-price{
-    font-size: 2.4rem;
-    color: var(--Red);
-    font-weight: 700;
+    padding: 0;
+    margin: 0;
   }
-    */
-.container{
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-.flex-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-h1{
-  color: var(--Rose-900);
-  font-weight: 700;
-  font-size: 2.4rem;
-}
-.card-container{
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0px;
-  row-gap: 8px;
-  column-gap: 12px;
-  width: 100%;
-}
-.product-card{
-  display: block;
-  height: fit-content;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.product-image{
-  width: 100%;
-  border-radius: 8px;
- 
-}
-.icon-add-to-cart{
-  margin: 0px;
-  margin-right: 4px;
-}
-.btn-addCart, .active-btn{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  background-color: aqua;
-  top: -32px;
-}  
-.btn-addCart{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  border: none;
-  background-color: var(--Rose-50);
-  color: var(--Rose-900);
-  font-weight: 500;
-  line-height: 0px;
-  height: 32px;
-  padding: 0px 14px;
-  border-radius: 64px;
-  cursor: pointer;
-  border: 1px solid var(--Rose-500);
-}
-/* Active Btn */
-.active-btn{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  border: none;
-  background-color: var(--Rose-50);
-  color: var(--Rose-900);
-  font-weight: 500;
-  line-height: 0px;
-  height: 32px;
-  padding: 0px 14px;
-  border-radius: 64px;
-  cursor: pointer;
-  border: 1px solid var(--Rose-500);
-}
-.text-btn{
-  font-size: 1.4rem;
-}
-p{
-  padding: 0;
-  margin: 0px;
-}
-.product-category, .product-name, .product-price{
-  margin: 0px;
-  top: -18px;
-  padding-bottom: 4px;
-  position: relative;
-}
-.product-category{
-  font-size: 1.2rem;
-}
-.product-name, .product-price{
-  font-size: 1.4rem;
-}
-.product-price{
-  padding: 0;
-  margin: 0;
-}
     /* Flex Two section Two */
   .cartBox{
     box-sizing: border-box;
@@ -624,46 +547,85 @@ p{
   }
   .li-container{
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     justify-content: space-between;
     align-items: center;
   }
   .item-name{
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: var(--Rose-900);
     margin-bottom: 4px;
-    margin-top: 12px;
+    margin-top: 8px;
   }
   .item-quantityDiv{
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
   }
+  .item_price_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div_{
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  text-align: center;
+  color: var(--Rose-300);
+  margin-right: 1px;
+}
+.item-price{
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  color: var(--Rose-300);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.item-Qrt{
+  color: var(--Red);
+  font-weight: 600;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.item-sale{
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  color: var(--Rose-500);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+  /*
   .item-Qrt{
     color: var(--Red);
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 12px;
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .item-price{
     display: flex;
     align-items: center;
     margin-right: 8px;
     color: var(--Rose-300);
-    font-weight: 500;
-    font-size: 1.6rem;
+    font-weight: 400;
+    font-size: 1.4rem;
   }
   .item-sale{
     display: flex;
     align-items: center;
     margin-right: 8px;
     color: var(--Rose-500);
-    font-weight: 500;
-    font-size: 1.8rem;
-  }
+    font-weight: 600;
+    font-size: 1.4rem;
+  } */
   .remove-btn{
     display: flex;
     align-items: center;
@@ -689,15 +651,15 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0px;
+    padding: 18px 0px;
   }
   .text-total{
     color: var(--Rose-900);
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
   .totel-item{
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 1.8rem;
     color: var(--Rose-900);
   }
   .div-carbon-neutral{
@@ -705,7 +667,7 @@ p{
     align-items: center;
     justify-content: center;
     background-color: var(--Rose-100);
-    padding: 16px 0px;
+    padding: 14px 0px;
     border-radius: 12px;
   }
   .text-carbon-neutral{
@@ -714,13 +676,13 @@ p{
     align-items: center;
     color: var(--Rose-900);
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .bold-text{
     font-weight: 700;
     white-space: 24px;
     padding: 0px 4px;
-       font-size: 1.8rem;
+       font-size: 1.6rem;
   }
   .confirm-order-btn{
     display: flex;
@@ -730,9 +692,8 @@ p{
     border: none;
     background-color: var(--Red);
     color: var(--Rose-50);
-    font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 52px;
+    font-weight: 600;
+    font-size: 1.6rem;
     padding: 12px 24px;
     margin-top: 24px;
     border-radius: 48px;
@@ -740,7 +701,7 @@ p{
     border: 1px solid var(--Red);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 998px) {
 
   .container{
     padding: 64px;
@@ -798,19 +759,18 @@ p{
     border: none;
     background-color: var(--Rose-50);
     color: var(--Rose-900);
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 30px;
-    padding: 0px 12px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 18px 12px;
     border-radius: 24px;
     cursor: pointer;
     border: 1px solid var(--Rose-500);
   }
+  .text-btn{
+    font-size: 1.6rem ;
+  }
   .btn-addCart:hover{
     border-color: var(--Red);
-  }
-  .text-btn{
-    font-size: 1.2rem;
   }
   .icon-add-to-cart{
     height: 18px;
@@ -826,14 +786,17 @@ p{
     font-weight: 500;
     margin-bottom: 6px;
   }
-  .product-name{
+  .product-category{
     font-size: 1.4rem;
+  }
+  .product-name{
+    font-size: 1.6rem;
     color: var(--Rose-900);
     font-weight: 700;
     margin-bottom: 6px;
   }
   .product-price{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--Red);
     font-weight: 700;
   }
@@ -850,7 +813,6 @@ p{
     background-color: var(--Rose-50);
     padding: 24px;
     border-radius: 12px;
-    font-size: 1.4rem;
   }
   .title-cartBox{
     font-size: 1.8rem;
@@ -862,10 +824,10 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 12px;
+    gap: 18px;;
   }
   .empty-cart-discription{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--Rose-500);
     font-weight: 700;
   }
@@ -874,15 +836,15 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 18px;
     outline: none;
     border: none;
     background-color: var(--Red);
     color: var(--Rose-50);
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 30px;
-    padding: 0px 12px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 18px 12px;
+    border-radius: 24px;
     border-radius: 24px;
     cursor: pointer;
     border: 1px solid var(--Red);
@@ -906,7 +868,7 @@ p{
     border-radius: 50%;
   }
   .Qantity-text{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .iconColor{
     fill: var(--Rose-50);
@@ -934,8 +896,8 @@ p{
     align-items: center;
   }
   .item-name{
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 600;
     color: var(--Rose-900);
     margin-bottom: 4px;
     margin-top: 12px;
@@ -943,7 +905,7 @@ p{
   .item-quantityDiv{
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    justify-content: center;
   }
   .item-Qrt{
     color: var(--Red);
@@ -951,23 +913,39 @@ p{
     margin-right: 12px;
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
+  .item_price_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div_{
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    text-align: center;
+    color: var(--Rose-300);
+    margin-right: 1px;
+  }
+
   .item-price{
     display: flex;
     align-items: center;
     margin-right: 8px;
     color: var(--Rose-300);
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
   }
   .item-sale{
     display: flex;
     align-items: center;
     margin-right: 8px;
     color: var(--Rose-500);
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
   }
   .remove-btn{
     display: flex;
@@ -998,7 +976,8 @@ p{
   }
   .text-total{
     color: var(--Rose-900);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
   }
   .totel-item{
     font-weight: 700;
@@ -1019,13 +998,13 @@ p{
     align-items: center;
     color: var(--Rose-900);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .bold-text{
     font-weight: 700;
     white-space: 24px;
     padding: 0px 4px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .confirm-order-btn{
     display: flex;
@@ -1036,7 +1015,7 @@ p{
     background-color: var(--Red);
     color: var(--Rose-50);
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 52px;
     padding: 0px 12px;
     margin-top: 24px;

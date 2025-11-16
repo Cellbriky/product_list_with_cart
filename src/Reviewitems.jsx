@@ -36,12 +36,12 @@ const Reviewitems = ({items, onSmash}) => {
                     </div>
                     <div className="confirmitems-Qrt">
                       <div className="confirm-Qrt">{item.qantity}x</div>
-                      <div className="confirm-price">@{item.price.toFixed(2)}</div>
+                      <div className="confirm_price_Div"><div className='div_at'>@</div><div className='confirm-price'>{item.price.toFixed(2)}</div></div>
                     </div>
                   </div>
                 </div>
                 <div className='confirm-sale'>
-                  {item.sale.toFixed(2)}
+                  ${item.sale.toFixed(2)}
                 </div>
               </li>
               <div className='line'></div>
